@@ -32,6 +32,7 @@ public class Migrante {
 //            joinColumns = @JoinColumn(name = "idMigrante"),
 //            inverseJoinColumns = @JoinColumn(name = "idRedSocial"))
 //    private List<RedSocial> redesSociales;
+//
 
     @OneToMany(mappedBy = "migrante", cascade = CascadeType.REMOVE)
     private List<MigranteRedSocialRel> migranteRedSocialRelList;
